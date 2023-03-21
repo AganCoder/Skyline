@@ -7,6 +7,27 @@
 
 import Foundation
 
-public final class Unsplash {
+public enum Unsplash {
+    
     static let host = "https://api.unsplash.com"
+    
+    enum Photos {
+        
+        enum OrderBy: String {
+            case latest
+            case oldest
+            case popular
+        }
+        case listPhoto(page: Int = 1, perPage:Int = 10, orderBy: OrderBy = .latest )
+    }
+    
+}
+
+extension Unsplash.Photos {
+//    var endpoint: String {
+//        switch self {
+//        case .listPhoto(param):
+//            return
+//        }
+//    }
 }

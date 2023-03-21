@@ -105,7 +105,7 @@ extension ImageTableViewController: NSTableViewDelegate, NSTableViewDataSource, 
     }
     
     func onSetWallPaperButton(in view: PaperTableCellView) {
-        guard let downloadUrl = view.paper?.downloadUrl, let url = URL(string: downloadUrl) else {
+        guard let downloadUrl = view.paper?.links?.download, let url = URL(string: downloadUrl) else {
             return
         }
         let source = ImageResource(downloadURL: url)

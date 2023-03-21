@@ -35,11 +35,13 @@
 		AC9EE29C29C985A7000584FF /* Unsplash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9EE29529C985A7000584FF /* Unsplash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC9EE2A229C9862A000584FF /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EE24929C97F24000584FF /* Column.swift */; };
 		AC9EE2A329C9862A000584FF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EE25229C97F24000584FF /* User.swift */; };
-		AC9EE2A429C9862A000584FF /* Paper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EE24E29C97F24000584FF /* Paper.swift */; };
-		AC9EE2A529C9862A000584FF /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EE25329C97F24000584FF /* URL.swift */; };
+		AC9EE2A429C9862A000584FF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EE24E29C97F24000584FF /* Photo.swift */; };
 		AC9EE2A829C988CC000584FF /* MainPopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EE24C29C97F24000584FF /* MainPopoverController.swift */; };
 		AC9EE2A929C988CC000584FF /* ImageTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EE24B29C97F24000584FF /* ImageTableController.swift */; };
 		AC9EE2AC29C991CB000584FF /* Unsplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EE2AB29C991CB000584FF /* Unsplash.swift */; };
+		ACE4BCED29C9AE030060A13D /* ImageURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4BCEC29C9AE030060A13D /* ImageURLs.swift */; };
+		ACE4BCEF29C9AEA00060A13D /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4BCEE29C9AEA00060A13D /* Links.swift */; };
+		ACE4BCF329C9B7730060A13D /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4BCF229C9B7730060A13D /* PhotoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,12 +87,11 @@
 		AC9EE24B29C97F24000584FF /* ImageTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableController.swift; sourceTree = "<group>"; };
 		AC9EE24C29C97F24000584FF /* MainPopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPopoverController.swift; sourceTree = "<group>"; };
 		AC9EE24D29C97F24000584FF /* PaperTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaperTableCellView.xib; sourceTree = "<group>"; };
-		AC9EE24E29C97F24000584FF /* Paper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paper.swift; sourceTree = "<group>"; };
+		AC9EE24E29C97F24000584FF /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		AC9EE24F29C97F24000584FF /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		AC9EE25029C97F24000584FF /* MainPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPopoverViewController.swift; sourceTree = "<group>"; };
 		AC9EE25129C97F24000584FF /* PaperTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperTableCellView.swift; sourceTree = "<group>"; };
 		AC9EE25229C97F24000584FF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		AC9EE25329C97F24000584FF /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		AC9EE26029C97F33000584FF /* ObjectsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsController.swift; sourceTree = "<group>"; };
 		AC9EE26129C97F33000584FF /* PageOffsetBasedObjectsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageOffsetBasedObjectsController.swift; sourceTree = "<group>"; };
 		AC9EE26229C97F33000584FF /* ObjectsControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsControllerBase.swift; sourceTree = "<group>"; };
@@ -107,6 +108,9 @@
 		AC9EE29729C985A7000584FF /* Unsplash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unsplash.h; sourceTree = "<group>"; };
 		AC9EE2AA29C98EC0000584FF /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		AC9EE2AB29C991CB000584FF /* Unsplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unsplash.swift; sourceTree = "<group>"; };
+		ACE4BCEC29C9AE030060A13D /* ImageURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLs.swift; sourceTree = "<group>"; };
+		ACE4BCEE29C9AEA00060A13D /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		ACE4BCF229C9B7730060A13D /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,9 +206,9 @@
 				AC9EE26229C97F33000584FF /* ObjectsControllerBase.swift */,
 				AC9EE26329C97F33000584FF /* AbstractObjectsController.swift */,
 				AC9EE26129C97F33000584FF /* PageOffsetBasedObjectsController.swift */,
+				AC9EE26629C97F33000584FF /* PageLoadingObjectsController.swift */,
 				AC9EE26429C97F33000584FF /* ObjectsControllerBox.swift */,
 				AC9EE26529C97F33000584FF /* OneRequestObjectsController.swift */,
-				AC9EE26629C97F33000584FF /* PageLoadingObjectsController.swift */,
 				AC9EE26729C97F33000584FF /* OffsetBasedObjectsController.swift */,
 				AC9EE27E29C98507000584FF /* ObjectsController.h */,
 			);
@@ -214,14 +218,32 @@
 		AC9EE29629C985A7000584FF /* Unsplash */ = {
 			isa = PBXGroup;
 			children = (
+				ACE4BCF129C9B7670060A13D /* Service */,
 				AC9EE29729C985A7000584FF /* Unsplash.h */,
 				AC9EE24929C97F24000584FF /* Column.swift */,
-				AC9EE24E29C97F24000584FF /* Paper.swift */,
-				AC9EE25329C97F24000584FF /* URL.swift */,
-				AC9EE25229C97F24000584FF /* User.swift */,
+				ACE4BCF029C9B75B0060A13D /* Modes */,
 				AC9EE2AB29C991CB000584FF /* Unsplash.swift */,
 			);
 			path = Unsplash;
+			sourceTree = "<group>";
+		};
+		ACE4BCF029C9B75B0060A13D /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+				AC9EE24E29C97F24000584FF /* Photo.swift */,
+				ACE4BCEC29C9AE030060A13D /* ImageURLs.swift */,
+				ACE4BCEE29C9AEA00060A13D /* Links.swift */,
+				AC9EE25229C97F24000584FF /* User.swift */,
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		ACE4BCF129C9B7670060A13D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ACE4BCF229C9B7730060A13D /* PhotoService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,10 +437,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9EE2A329C9862A000584FF /* User.swift in Sources */,
-				AC9EE2A429C9862A000584FF /* Paper.swift in Sources */,
+				AC9EE2A429C9862A000584FF /* Photo.swift in Sources */,
 				AC9EE2A229C9862A000584FF /* Column.swift in Sources */,
+				ACE4BCED29C9AE030060A13D /* ImageURLs.swift in Sources */,
+				ACE4BCEF29C9AEA00060A13D /* Links.swift in Sources */,
 				AC9EE2AC29C991CB000584FF /* Unsplash.swift in Sources */,
-				AC9EE2A529C9862A000584FF /* URL.swift in Sources */,
+				ACE4BCF329C9B7730060A13D /* PhotoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

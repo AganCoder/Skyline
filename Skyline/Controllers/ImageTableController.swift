@@ -24,13 +24,13 @@ fileprivate extension TitleCategory {
 }
 
 
-class ImageTableController: PageLoadingObjectsController<Paper> {
+class ImageTableController: PageLoadingObjectsController<Photo> {
 
     var column: Column?
 
     let category: TitleCategory
 
-    var images: [Paper] {
+    var images: [Photo] {
         return self.objects
     }
 
@@ -42,7 +42,7 @@ class ImageTableController: PageLoadingObjectsController<Paper> {
     }
 
     @discardableResult
-    open override func loadObjects(currentPage index: Int, pageSize: Int, completion: @escaping (([Paper]) -> Void), failure: @escaping (Error) -> Void) -> Bool {
+    open override func loadObjects(currentPage index: Int, pageSize: Int, completion: @escaping (([Photo]) -> Void), failure: @escaping (Error) -> Void) -> Bool {
 
         var parameters: Parameters = [:]
         parameters["page"] = index
@@ -59,7 +59,7 @@ class ImageTableController: PageLoadingObjectsController<Paper> {
             break
         }
         
-        AF.request(self.category.url, parameters: parameters).responseDecodable(of: [Paper].self) { response in
+        AF.request(self.category.url, parameters: parameters).responseDecodable(of: [Photo].self) { response in
             if let values = response.value {
                 completion(values)
             }

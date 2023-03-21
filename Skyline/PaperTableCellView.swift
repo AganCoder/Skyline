@@ -10,39 +10,39 @@ import Cocoa
 import Kingfisher
 import Unsplash
 
-extension Paper.Stype {
+//extension Photo.Stype {
+//
+//    var imageName: NSImage? {
+//        switch self {
+//        case .standard:
+//            return nil
+//        case .is4K:
+//            return NSImage(named: NSImage.Name("4k_icon_normal24x24"))
+//        case .is5K:
+//            return NSImage(named: NSImage.Name("5k_icon_normal24x24"))
+//        }
+//    }
+//}
 
-    var imageName: NSImage? {
-        switch self {
-        case .standard:
-            return nil
-        case .is4K:
-            return NSImage(named: NSImage.Name("4k_icon_normal24x24"))
-        case .is5K:
-            return NSImage(named: NSImage.Name("5k_icon_normal24x24"))
-        }
-    }
-}
-
-extension Paper {
-
-    var thumbUrl:String {
-        guard var thumb = self.urls?["raw"] else {
-            return ""
-        }
-        
-        thumb += "&h=168&dpr=2"
-        
-        return thumb
-    }
-    
-    var downloadUrl: String {
-        guard let download = self.links?["download"] else {
-            return ""
-        }
-        return download
-    }
-}
+//extension Photo {
+//
+//    var thumbUrl:String {
+//        guard var thumb = self.urls?["raw"] else {
+//            return ""
+//        }
+//
+//        thumb += "&h=168&dpr=2"
+//
+//        return thumb
+//    }
+//
+//    var downloadUrl: String {
+//        guard let download = self.links?["download"] else {
+//            return ""
+//        }
+//        return download
+//    }
+//}
 
 protocol PaperTableCellViewDelegate: AnyObject {
     func onSetWallPaperButton(in view: PaperTableCellView)
@@ -72,9 +72,9 @@ class PaperTableCellView: NSTableCellView {
         self.pixelIndicatorImageView.isHidden = !isEntered
     }
 
-    var paper: Paper? {
+    var paper: Photo? {
         didSet {
-            if let urlString = paper?.thumbUrl, let url = URL(string: urlString) {
+            if let urlString = paper?.urls?.thumb, let url = URL(string: urlString) {
                 self.backgroundImageView.kf.setImage(with: url)
             } else {
                 self.backgroundImageView.image = nil
