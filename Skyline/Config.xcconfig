@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  Skyline
+//
+//  Created by Noah.Gao on 2023/3/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SKYLINE_UNSPLASH_ACCESSKEY=UxtTr6lOfauHu-Wk03HZfHZy9GIOHb7x54IStVRPwrU
+SKYLINE_UNSPLASH_SECRETKEY=DqzPmUu10kLJsnzOSFpPgHxzxODBGjqL6jCWFNH5wJg
